@@ -1,0 +1,20 @@
+  :root{--bg:#f7f7fb;--card:#fff;--accent:#3b82f6;--muted:#6b7280;--glass:rgba(255,255,255,0.6)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%); color:#111}
+    .wrap{max-width:900px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    h1{margin:0;font-size:1.4rem}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);padding:20px}
+    .mystery-type{display:flex;align-items:center;gap:10px}
+    .pill{padding:6px 10px;border-radius:999px;background:var(--glass);font-weight:600;color:var(--accent);border:1px solid rgba(59,130,246,0.12)}
+    ul{padding-left:1.05rem}
+    li{margin-bottom:10px}
+    .meta{color:var(--muted);font-size:0.9rem;margin-top:8px}
+    .controls{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    button{background:transparent;border:1px solid rgba(99,102,241,0.12);padding:8px 12px;border-radius:8px;cursor:pointer}
+    button.active{background:var(--accent);color:white;border-color:transparent}
+    .small{font-size:0.9rem;color:var(--muted)}
+    footer{margin-top:20px;color:var(--muted);font-size:0.9rem}
+    .note{margin-top:12px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:560px){.wrap{margin:18px;padding:14px}}

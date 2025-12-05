@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Misterios del Rosario — Misterio del día</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M12 2v20M2 12h20" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <h1>Misterios del Rosario</h1>
+        <p class="lead">La página muestra automáticamente el misterio litúrgico correspondiente al día de la semana.</p>
+      </div>
+    </header>
+
+    <section class="card" id="todayCard">
+      <div class="mystery-type">
+        <div class="pill" id="mysteryPill">—</div>
+        <div>
+          <div id="dayLabel" style="font-weight:700;font-size:1rem">Hoy</div>
+          <div class="small" id="dateLabel"></div>
+        </div>
+      </div>
+
+      <div id="mysteriesList" style="margin-top:16px"></div>
+      <div class="meta" id="metaNote"></div>
+
+      <div class="controls">
+        <button id="showAllBtn">Ver otros misterios</button>
+        <button id="prevDay">Día anterior</button>
+        <button id="nextDay">Día siguiente</button>
+      </div>
+
+      <div class="note">Tradicional: Lunes y Sábado — Gozosos; Martes y Viernes — Dolorosos; Domingo y Miércoles — Gloriosos; Jueves — Luminosos (añadidos por San Juan Pablo II en 2002).</div>
+    </section>
+
+    <section class="card" id="allCard" style="margin-top:14px;display:none">
+      <h3 style="margin-top:0">Todos los conjuntos</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+        <div class="card" style="padding:12px">
+          <div class="pill">Gozosos</div>
+          <ul id="joyful"></ul>
+        </div>
+        <div class="card" style="padding:12px">
+          <div class="pill">Dolorosos</div>
+          <ul id="sorrowful"></ul>
+        </div>
+        <div class="card" style="padding:12px">
+          <div class="pill">Gloriosos</div>
+          <ul id="glorious"></ul>
+        </div>
+        <div class="card" style="padding:12px">
+          <div class="pill">Luminosos</div>
+          <ul id="luminous"></ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Marcio Hermosa Producciones</div>
+    </footer>
+  </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
